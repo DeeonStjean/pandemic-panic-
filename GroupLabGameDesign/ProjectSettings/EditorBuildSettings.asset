@@ -8,4 +8,49 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/month1/week1des1.unity
+    guid: 821eaa51bf328486d8ce255a9cb47503
+  - enabled: 1
+    path: Assets/Scenes/month1/week1des2.unity
+    guid: 246c6172b022a4730854b7499cf24653
+  - enabled: 1
+    path: Assets/Scenes/month1/week1des3.unity
+    guid: 2fc0b33e4310e40a1b60fb18da9d2d20
+  - enabled: 1
+    path: Assets/Scenes/month1/m1NewsSegment.unity
+    guid: 8a1e5f3bf259b4ef485781ed8fac0a19
+  - enabled: 1
+    path: Assets/Scenes/month2/m2week1des1.unity
+    guid: bf644d510f59546a9b60ab837ad7886e
+  - enabled: 1
+    path: Assets/Scenes/month2/m2week2des2.unity
+    guid: 1b4a2bc11cd854801a6b7840d4f65b21
+  - enabled: 1
+    path: Assets/Scenes/month2/m2NewsSegment.unity
+    guid: 9ae7c6638c360497abed3d2f9873c7da
+  - enabled: 1
+    path: Assets/Scenes/month3/m3week1des1.unity
+    guid: 3581fe6436424439aba8e137e6f00687
+  - enabled: 1
+    path: Assets/Scenes/month3/m3week2des1.unity
+    guid: 34c4e494b312e4a05a2db5441fb788d8
+  - enabled: 1
+    path: Assets/Scenes/month3/m3week3des1.unity
+    guid: 7f1b4c3a19fd2408398239995dfc892b
+  - enabled: 1
+    path: Assets/Scenes/month3/m3NewsSegment.unity
+    guid: c9d38d00d3d4e417bb21861dc66e4c72
+  - enabled: 1
+    path: Assets/Scenes/month4/m4NewsSegment.unity
+    guid: ebe520d9f81314ff4b306cfb4b0c6ac0
+  - enabled: 1
+    path: Assets/Scenes/month5/m5week1des1.unity
+    guid: d27e74e0180f447b590ff7a5a8ef5a5b
+  - enabled: 1
+    path: Assets/Scenes/month5/m5week2des.unity
+    guid: 1594737b1e71149dbb7a1619926e9bec
+  - enabled: 1
+    path: Assets/Scenes/month5/m5NewsSegment.unity
+    guid: 9dc1fac586b5f4490b142870b169275b
   m_configObjects: {}
