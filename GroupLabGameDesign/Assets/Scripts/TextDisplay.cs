@@ -5,34 +5,38 @@ using TMPro;
 
 public class TextDisplay : MonoBehaviour
 {
-    public TextMeshProUGUI textDesc;
+    public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
-    //public AudioSource textSound;
+    public AudioSource textSound;
     private int index;
     // Start is called before the first frame update
     void Start()
     {
-        textDesc.text = string.Empty;
+        textComponent.text = string.Empty; 
         StartDialogue();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+         if (textSound.time > 7.5f)
+        {
+            textSound.Stop();
+        }
     }
 
     void StartDialogue() 
     {
         index = 0;
+        textSound.Play();
         StartCoroutine(TypeLine());
     }
     IEnumerator TypeLine()
     {
         foreach (char c in lines[index].ToCharArray()) 
         {
-            textDesc.text += c;
+            textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
         }
     }
