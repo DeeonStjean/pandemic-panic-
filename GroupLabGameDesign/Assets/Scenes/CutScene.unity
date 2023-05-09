@@ -283,8 +283,13 @@ Canvas:
   m_GameObject: {fileID: 734278435}
   m_Enabled: 1
   serializedVersion: 3
+<<<<<<< Updated upstream
   m_RenderMode: 0
   m_Camera: {fileID: 0}
+=======
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
+>>>>>>> Stashed changes
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -400,6 +405,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1414360060}
   - component: {fileID: 1414360059}
+<<<<<<< Updated upstream
+=======
+  - component: {fileID: 1414360061}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: Video Player
   m_TagString: Untagged
@@ -458,6 +467,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
+=======
+--- !u!114 &1414360061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414360058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b8f6a8bcef309b42be1964c700b11f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+>>>>>>> Stashed changes
 --- !u!1 &1653049477
 GameObject:
   m_ObjectHideFlags: 0
