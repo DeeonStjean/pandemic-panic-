@@ -56,4 +56,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/month5/m5NewsSegment.unity
     guid: 9dc1fac586b5f4490b142870b169275b
+  - enabled: 1
+    path: Assets/Scenes/Instructions.unity
+    guid: 6dcc2c9ca96834fe49a728dd2702cc9a
+  - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: 50d451f0f05b74e92bc2312dd85ba688
   m_configObjects: {}
