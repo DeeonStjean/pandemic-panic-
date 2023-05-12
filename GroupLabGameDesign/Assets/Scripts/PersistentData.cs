@@ -5,12 +5,29 @@ using UnityEngine.SceneManagement;
 
 public class PersistentData : MonoBehaviour
 {
-    [SerializeField] int stress;
-    [SerializeField] int infected;
-    [SerializeField] float happines;
-    [SerializeField] long alive;
+    // Months will be treated as rounds (sort of).
+    [SerializeField] int month = 0;
+
+    // Stress and the tolerance the player has.
+    // If stress grows more than tolerance, game over.
+    [SerializeField] int stress = 0;
+    [SerializeField] int tolerance = 100;
+
+    // Happiness of the citizens.
+    [SerializeField] int happiness = 50;
+
+    // Cases and the rate they progress.
+    [SerializeField] int cases = 0;
+    [SerializeField] float caseRate = 1.0f;
+
+    // Deaths and the rate they progress.
+    [SerializeField] int deaths = 0;
+    [SerializeField] float deathRate = 1.0f;
+
 
     public HealthBar stressBar;
+
+    // PersistentData.
     public static PersistentData Instance;
 
     public void Awake()
@@ -23,56 +40,31 @@ public class PersistentData : MonoBehaviour
         else
             Destroy(gameObject);
     }
-    void Start()
+
+    void Start () {}
+
+    void Update () {}
+
+    public void advanceMonth()
     {
-        stress = 0;
-        happines = 70.0f;
-        infected = 0;
-        alive = 300000000;
+        /*
+            With each month advanced, the cases/deaths will grow.
+            It is tied to their rates, and happiness should follow.
+
+            Cases will be tied to their decisions.
+        */
     }
 
-    public void SetStress(int stress)
+    public void alterHappiness (int happiness)
     {
-        stressBar.SetHealth(stress);
+        this.happiness += happiness;
     }
 
-    public void SetInfected(int inf)
+    public void verifyContinue ()
     {
-        infected = inf;
-    }
-
-    public void SetHappines(float happ)
-    {
-        happines = happ;
-    }
-
-    public void SetAlive(long aliv)
-    {
-        alive = aliv;
-    }
-
-    public int GetStress()
-    {
-        return stress;
-    }
-
-    public int GetInfected()
-    {
-        return infected;
-    }
-
-    public long GetAlive()
-    {
-        return alive;
-    }
-
-    public float GetHappines()
-    {
-        return happines;
-    }
-    // Update is called once per frame
-    void Update()
-    {
-     
+        /*
+            If stress too high OR
+            happiness too low, game over.
+        */
     }
 }
