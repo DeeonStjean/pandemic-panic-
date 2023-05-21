@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ButtonBehavior : MonoBehaviour
 {
+    
     public void loadMenu() {
         //AudioSource.Play();
         SceneManager.LoadScene("MainMenu");
@@ -20,4 +21,6 @@ public class ButtonBehavior : MonoBehaviour
         //AudioSource.PlayClipAtPoint(clickSoundEffect, transform.position);
         SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex) + 1);
     }
+
+    
 }

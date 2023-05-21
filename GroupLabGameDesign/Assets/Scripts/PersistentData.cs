@@ -10,22 +10,22 @@ public class PersistentData : MonoBehaviour
 
     // Stress and the tolerance the player has.
     // If stress grows more than tolerance, game over.
-    [SerializeField] int stress = 0;
-    [SerializeField] int tolerance = 100;
+    [SerializeField] int stress;
+    [SerializeField] int tolerance;
 
     // Happiness of the citizens.
-    [SerializeField] int happiness = 50;
+    [SerializeField] int happiness;
 
     // Cases and the rate they progress.
-    [SerializeField] int cases = 0;
-    [SerializeField] float caseRate = 1.0f;
+    [SerializeField] int cases;
+    [SerializeField] float caseRate;
 
     // Deaths and the rate they progress.
-    [SerializeField] int deaths = 0;
-    [SerializeField] float deathRate = 1.0f;
+    [SerializeField] int deaths;
+    [SerializeField] float deathRate;
 
 
-    public HealthBar stressBar;
+    public StressBar stressBar;
 
     // PersistentData.
     public static PersistentData Instance;
@@ -41,9 +41,24 @@ public class PersistentData : MonoBehaviour
             Destroy(gameObject);
     }
 
-    void Start () {}
+    void Start() {
+        stress = 0;
+        tolerance = 100;
+        happiness = 50;
+       
+    }
+
+    public void SStress(int stress)
+    {
+        stressBar.SetStress(stress);
+    }
 
     void Update () {}
+
+    public int GetStress()
+    {
+        return stress;
+    }
 
     public void advanceMonth()
     {
