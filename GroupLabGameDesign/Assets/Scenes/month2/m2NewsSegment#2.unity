@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -13.3, y: 12}
+  m_AnchoredPosition: {x: -11, y: 12}
   m_SizeDelta: {x: 457.98, y: 48.91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &138397869
@@ -181,10 +181,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Earlier this month, a Chinese doctor Dr. Li Wenliang has died after contracting
+  m_text: "Earlier this month, a Chinese doctor Dr. Li Wenliang has died after contracting
     the coronavirus... He has been trying to ring early alarms that infections could
     spin out of control... And here in the US, the president has decided it would
-    be best to start making plans as in anticipation of calling a state of emergency.
+    be best to wait until more reported deaths are declared\u2026 This decision seems
+    to have altered the masses as some individuals fear that they report that they
+    feel \u201Clow confidence\u201D in the government\u2019s advice."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80bacbb2c4cdd4f56a7e130ca4acb597, type: 2}
   m_sharedMaterial: {fileID: 7485035357008968249, guid: 80bacbb2c4cdd4f56a7e130ca4acb597, type: 2}
@@ -211,8 +213,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 27
+  m_fontSizeBase: 27
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -477,7 +479,8 @@ MonoBehaviour:
   - 
   - 
   - 
-  textSpeed: 0.02
+  - 
+  textSpeed: 0.014
   textSound: {fileID: 1120969163}
 --- !u!114 &357265828
 MonoBehaviour:
