@@ -18,6 +18,9 @@ public class TextDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        lines = new string[1];
+        lines[0] = textComponent.text;
+        
         textComponent.text = string.Empty; 
         StartDialogue();
 
