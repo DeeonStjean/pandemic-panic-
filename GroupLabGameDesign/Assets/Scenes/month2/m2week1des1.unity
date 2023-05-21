@@ -355,14 +355,12 @@ MonoBehaviour:
   textComponent: {fileID: 102792547}
   lines:
   - 
-<<<<<<< HEAD
+  
   textSpeed: 0.023
   textSound: {fileID: 1479501947}
-=======
+  
   textSpeed: 0.05
   textSound: {fileID: 1272006320}
->>>>>>> 5ba1ec669d8f1cbe5edec14ebfaee226f779155d
---- !u!1 &174084089
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
