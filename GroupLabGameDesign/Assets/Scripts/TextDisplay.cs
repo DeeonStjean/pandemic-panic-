@@ -20,10 +20,7 @@ public class TextDisplay : MonoBehaviour
     {
         lines = new string[1];
         lines[0] = textComponent.text;
-<<<<<<< HEAD
-=======
-        
->>>>>>> 5ba1ec669d8f1cbe5edec14ebfaee226f779155d
+
         textComponent.text = string.Empty; 
         StartDialogue();
 
