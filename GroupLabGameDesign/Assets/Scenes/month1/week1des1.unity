@@ -179,6 +179,11 @@ MonoBehaviour:
   - Chinese state media reported the first known death from an illness caused by
     the virus, which had infected dozens of people... Should you bring attention
     to the issue?
+  - Certainly something to be worried for. I don't want my people becoming sick.
+  - Yes! Might as well, this could be something potentially dangerous for the American
+    people.
+  - This is only pneumonia. This will most likely pass.
+  - Humbug! I don't think this is something to be majorly worried about.
   textSpeed: 0.04
   textSound: {fileID: 583742003}
 --- !u!114 &2341341
@@ -812,7 +817,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1303471048}
         m_TargetAssemblyTypeName: ButtonBehavior, Assembly-CSharp
-        m_MethodName: nextScene
+        m_MethodName: WaitNext
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2341340}
+        m_TargetAssemblyTypeName: TextDisplay, Assembly-CSharp
+        m_MethodName: Decision2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1307,7 +1324,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1303471048}
         m_TargetAssemblyTypeName: ButtonBehavior, Assembly-CSharp
-        m_MethodName: nextScene
+        m_MethodName: WaitNext
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1325,6 +1342,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2341340}
+        m_TargetAssemblyTypeName: TextDisplay, Assembly-CSharp
+        m_MethodName: Decision1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

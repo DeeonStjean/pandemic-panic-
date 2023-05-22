@@ -179,6 +179,12 @@ MonoBehaviour:
   - Chinese state media reported the first known death from an illness caused by
     the virus, which had infected dozens of people... Should you bring attention
     to the issue?
+  - My American people. In order to best ourselves, we must restrict travel.
+  - My American people, I will do everything in my power to keep you safe. Even if
+    it means no travel.
+  - Do you see China? They cannot handle this at all! My american people, rest assured
+    we will do better.
+  - We wouldn't be in this mess if they did better! It is all China's fault.
   textSpeed: 0.04
   textSound: {fileID: 583742003}
 --- !u!114 &2341341
@@ -815,7 +821,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1303471048}
         m_TargetAssemblyTypeName: ButtonBehavior, Assembly-CSharp
-        m_MethodName: LoadNewsScene
+        m_MethodName: WaitSpecific
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -833,6 +839,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: -15
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2341340}
+        m_TargetAssemblyTypeName: TextDisplay, Assembly-CSharp
+        m_MethodName: Decision2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1322,7 +1340,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1303471048}
         m_TargetAssemblyTypeName: ButtonBehavior, Assembly-CSharp
-        m_MethodName: LoadNewsScene
+        m_MethodName: WaitSpecific
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1336,6 +1354,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: ButtonBehavior, Assembly-CSharp
         m_MethodName: AlterHappiness
         m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2341340}
+        m_TargetAssemblyTypeName: TextDisplay, Assembly-CSharp
+        m_MethodName: Decision1
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

@@ -6,7 +6,8 @@ using TMPro;
 public class TextDisplay : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
-    public string[] lines;
+    [SerializeField] public string[] lines;
+    private bool isQuestion = true;
 
     public float textSpeed;
 
@@ -18,7 +19,6 @@ public class TextDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        lines = new string[1];
         lines[0] = textComponent.text;
 
         textComponent.text = string.Empty; 
@@ -52,11 +52,43 @@ public class TextDisplay : MonoBehaviour
         {
             textComponent.text += c;
 
-            if (textComponent.text[textComponent.text.Length-1] == '?')
+            if (textComponent.text[textComponent.text.Length-1] == '?' && isQuestion)
                 foreach (GameObject o in decisions)
                     o.SetActive(true);
 
             yield return new WaitForSeconds(textSpeed);
         }
+    }
+
+    private void Disable ()
+    {
+        foreach (GameObject o in decisions)
+            o.SetActive(false);
+    }
+    public void Decision1 ()
+    {
+        index = UnityEngine.Random.Range(1,3);
+        textComponent.text = "";
+        StartCoroutine(TypeLine());
+        Disable();
+        isQuestion = false;
+    }
+
+    public void Decision2 ()
+    {
+        index = UnityEngine.Random.Range(3,5);
+        textComponent.text = "";
+        StartCoroutine(TypeLine());
+        Disable();
+        isQuestion = false;
+    }
+
+    public void Decision3 ()
+    {
+        index = UnityEngine.Random.Range(5,7);
+        textComponent.text = "";
+        StartCoroutine(TypeLine());
+        Disable();
+        isQuestion = false;
     }
 }

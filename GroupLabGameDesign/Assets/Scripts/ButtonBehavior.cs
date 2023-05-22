@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ButtonBehavior : MonoBehaviour
 {
     private static PersistentData data;
+    private int index = 0;
 
     void Start ()
     {
@@ -37,6 +38,26 @@ public class ButtonBehavior : MonoBehaviour
     public void PreviousScene ()
     {
         SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex) - 1);
+    }
+
+    public void WaitNext()
+    {
+        Invoke("nextScene",7.5f);
+    }
+
+    public void WaitPrev()
+    {
+        Invoke("PreviousScene",7.5f);
+    }
+    public void WaitSpecific (int index)
+    {
+        this.index = index;
+        Invoke("NewsIndex",7.5f);
+    }
+
+    private void NewsIndex ()
+    {
+        LoadNewsScene(index);
     }
 
     public void LoadNewsScene (int scene)

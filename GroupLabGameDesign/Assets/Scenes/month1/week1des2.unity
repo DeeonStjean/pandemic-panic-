@@ -179,6 +179,11 @@ MonoBehaviour:
   - Chinese state media reported the first known death from an illness caused by
     the virus, which had infected dozens of people... Should you bring attention
     to the issue?
+  - This is best left to the experts. They'll know how to handle this.
+  - I will ensure the best possible state of action from those worthy!
+  - I don't believe this is still serious. This is only jusr pneumonia. Nothing to
+    panic.
+  - One person? Happens all the time. Remember the Ebola scare?
   textSpeed: 0.04
   textSound: {fileID: 583742003}
 --- !u!114 &2341341
@@ -809,7 +814,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1303471048}
         m_TargetAssemblyTypeName: ButtonBehavior, Assembly-CSharp
-        m_MethodName: nextScene
+        m_MethodName: WaitNext
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -827,6 +832,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: -5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2341340}
+        m_TargetAssemblyTypeName: TextDisplay, Assembly-CSharp
+        m_MethodName: Decision2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1316,7 +1333,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1303471048}
         m_TargetAssemblyTypeName: ButtonBehavior, Assembly-CSharp
-        m_MethodName: nextScene
+        m_MethodName: WaitNext
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1334,6 +1351,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 15
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2341340}
+        m_TargetAssemblyTypeName: TextDisplay, Assembly-CSharp
+        m_MethodName: Decision1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
