@@ -352,7 +352,7 @@ MonoBehaviour:
   textComponent: {fileID: 102792547}
   lines:
   - 
-  textSpeed: 0.11
+  textSpeed: 0.12
   textSound: {fileID: 1151154247}
 --- !u!1 &174084089
 GameObject:

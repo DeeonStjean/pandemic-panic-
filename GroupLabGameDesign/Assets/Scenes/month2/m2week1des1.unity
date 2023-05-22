@@ -280,7 +280,7 @@ MonoBehaviour:
   lines:
   - 
   - 
-  textSpeed: 0.023
+  textSpeed: 0.03
   textSound: {fileID: 1479501947}
 --- !u!1 &177491588
 GameObject:
