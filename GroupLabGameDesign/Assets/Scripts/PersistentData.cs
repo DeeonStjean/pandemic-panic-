@@ -10,19 +10,18 @@ public class PersistentData : MonoBehaviour
 
     // Stress and the tolerance the player has.
     // If stress grows more than tolerance, game over.
-    [SerializeField] int stress;
-    [SerializeField] int tolerance;
+    [SerializeField] int stress = 0;
 
     // Happiness of the citizens.
-    [SerializeField] int happiness;
+    [SerializeField] public int happiness = 50;
 
     // Cases and the rate they progress.
-    [SerializeField] int cases;
-    [SerializeField] float caseRate;
+    [SerializeField] int cases = 0;
+    [SerializeField] float caseRate = 1.0f;
 
     // Deaths and the rate they progress.
-    [SerializeField] int deaths;
-    [SerializeField] float deathRate;
+    [SerializeField] int deaths = 0;
+    [SerializeField] float deathRate = 1.0f;
 
 
     public StressBar stressBar;
@@ -41,11 +40,8 @@ public class PersistentData : MonoBehaviour
             Destroy(gameObject);
     }
 
-    void Start() {
-        stress = 0;
-        tolerance = 100;
-        happiness = 50;
-       
+    void Start()
+    {
     }
 
     public void SStress(int stress)
@@ -60,16 +56,6 @@ public class PersistentData : MonoBehaviour
         return stress;
     }
 
-    public void advanceMonth()
-    {
-        /*
-            With each month advanced, the cases/deaths will grow.
-            It is tied to their rates, and happiness should follow.
-
-            Cases will be tied to their decisions.
-        */
-    }
-
     public void alterHappiness (int happiness)
     {
         this.happiness += happiness;
@@ -77,9 +63,11 @@ public class PersistentData : MonoBehaviour
 
     public void verifyContinue ()
     {
-        /*
-            If stress too high OR
-            happiness too low, game over.
-        */
+        if (happiness < 10)
+            //Riot
+            SceneManager.LoadScene("GameOverScene2");
+        else if (stress >= 100)
+            //Too Stressed
+            SceneManager.LoadScene("GameOverScene1");
     }
 }
