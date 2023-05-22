@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/month1/m1NewsSegment.unity
     guid: 8a1e5f3bf259b4ef485781ed8fac0a19
   - enabled: 1
+    path: Assets/Scenes/month1/m1NewsSegment#2.unity
+    guid: b23a611926a4ba34682b9b002c0a235e
+  - enabled: 1
     path: Assets/Scenes/month2/m2week1des1.unity
     guid: bf644d510f59546a9b60ab837ad7886e
   - enabled: 1
@@ -32,6 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/month2/m2NewsSegment.unity
     guid: 9ae7c6638c360497abed3d2f9873c7da
+  - enabled: 1
+    path: Assets/Scenes/month2/m2NewsSegment#2.unity
+    guid: 0b70e3d3a3634b345b2fe5480cbcf3fc
   - enabled: 1
     path: Assets/Scenes/month3/m3week1des1.unity
     guid: 3581fe6436424439aba8e137e6f00687
