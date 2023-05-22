@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class ButtonBehavior : MonoBehaviour
 {
-    public static DecisionArray instance;
+    
 
     void Start ()
     {
-        instance = GameObject.FindWithTag("Decisionkeeper").GetComponent<DecisionArray>();
+        
     }
 
     public void loadMenu() {
