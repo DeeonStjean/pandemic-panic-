@@ -8,6 +8,8 @@ public class ButtonBehavior : MonoBehaviour
     private static PersistentData data;
     private int index = 0;
 
+    [SerializeField] float waitTime = 4.0f;
+
     void Start ()
     {
         data = GameObject.FindWithTag("PD").GetComponent<PersistentData>();
@@ -42,17 +44,17 @@ public class ButtonBehavior : MonoBehaviour
 
     public void WaitNext()
     {
-        Invoke("nextScene",7.5f);
+        Invoke("nextScene",waitTime);
     }
 
     public void WaitPrev()
     {
-        Invoke("PreviousScene",7.5f);
+        Invoke("PreviousScene",waitTime);
     }
     public void WaitSpecific (int index)
     {
         this.index = index;
-        Invoke("NewsIndex",7.5f);
+        Invoke("NewsIndex",waitTime);
     }
 
     private void NewsIndex ()
