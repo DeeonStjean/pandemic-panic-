@@ -1321,7 +1321,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1303471048}
         m_TargetAssemblyTypeName: ButtonBehavior, Assembly-CSharp
-        m_MethodName: loadNextDes2
+        m_MethodName: nextScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
