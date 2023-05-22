@@ -74,4 +74,9 @@ public class ButtonBehavior : MonoBehaviour
     {
         data.AlterStress(amount);
     }
+
+    public void Reset ()
+    {
+        data.Reset();
+    }
 }

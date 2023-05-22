@@ -1009,6 +1009,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1303471048}
+        m_TargetAssemblyTypeName: ButtonBehavior, Assembly-CSharp
+        m_MethodName: Reset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1507652887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1699,14 +1711,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5b52f5b408fee4cadbd2fbcced2b86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  month: 0
+  score: 0
   stress: 0
   happiness: 50
-  cases: 0
-  caseRate: 1
-  deaths: 0
-  deathRate: 1
-  stressBar: {fileID: 0}
 --- !u!4 &2045122402
 Transform:
   m_ObjectHideFlags: 0

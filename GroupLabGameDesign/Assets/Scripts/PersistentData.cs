@@ -38,6 +38,11 @@ public class PersistentData : MonoBehaviour
             Destroy(gameObject);
     }
 
+    public void Reset ()
+    {
+        stress = 0;
+        happiness = 50;
+    }
     public void AlterHappiness (int happiness)
     {
         this.happiness += happiness;
