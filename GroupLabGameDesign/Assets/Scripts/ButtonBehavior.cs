@@ -5,32 +5,40 @@ using UnityEngine.SceneManagement;
 
 public class ButtonBehavior : MonoBehaviour
 {
-    
-
     void Start ()
     {
         
     }
 
-    public void loadMenu() {
+    public void loadMenu()
+    {
         //AudioSource.Play();
         SceneManager.LoadScene("MainMenu");
     }
-    public void loadSettings() {
+
+    public void loadSettings()
+    {
         SceneManager.LoadScene("Settings");
     }
-    public void loadInstructions() {
+
+    public void loadInstructions()
+    {
         SceneManager.LoadScene("Instructions");
     }
+
     public void nextScene() 
     {
         //AudioSource.PlayClipAtPoint(clickSoundEffect, transform.position);
         SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex) + 1);
     }
 
-    public void LoadNewsScene(int scene)
+    public void PreviousScene ()
+    {
+        SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex) - 1);
+    }
+
+    public void LoadNewsScene (int scene)
     {
         SceneManager.LoadScene(scene);
     }
-
 }
