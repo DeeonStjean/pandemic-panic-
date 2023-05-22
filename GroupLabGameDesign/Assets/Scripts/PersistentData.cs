@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PersistentData : MonoBehaviour
 {
-    // Months will be treated as rounds (sort of).
-    [SerializeField] int month = 0;
+    // Scoring
+    [SerializeField] int score = 0;
 
     // Stress and the tolerance the player has.
     // If stress grows more than tolerance, game over.
@@ -15,16 +15,14 @@ public class PersistentData : MonoBehaviour
     // Happiness of the citizens.
     [SerializeField] private int happiness = 50;
 
-    // Cases and the rate they progress.
-    [SerializeField] int cases = 0;
-    [SerializeField] float caseRate = 1.0f;
+    // // Cases and the rate they progress.
+    // [SerializeField] int cases = 0;
+    // private int[] casePath = 
+    // [SerializeField] float caseRate = 1.0f;
 
-    // Deaths and the rate they progress.
-    [SerializeField] int deaths = 0;
-    [SerializeField] float deathRate = 1.0f;
-
-
-    public StressBar stressBar;
+    // // Deaths and the rate they progress.
+    // [SerializeField] int deaths = 0;
+    // [SerializeField] float deathRate = 1.0f;
 
     // PersistentData.
     public static PersistentData Instance;
@@ -40,12 +38,19 @@ public class PersistentData : MonoBehaviour
             Destroy(gameObject);
     }
 
-    public void alterHappiness (int happiness)
+    public void AlterHappiness (int happiness)
     {
         this.happiness += happiness;
+        VerifyContinue();
     }
 
-    public void verifyContinue ()
+    public void AlterStress (int amount)
+    {
+        this.stress += amount;
+        VerifyContinue();
+    }
+
+    private void VerifyContinue ()
     {
         if (happiness <= 10)
             //Riot
@@ -58,6 +63,11 @@ public class PersistentData : MonoBehaviour
     public int GetStress ()
     {
         return stress;
+    }
+
+    public int GetPlayerScore ()
+    {
+        return score;
     }
 
     public int GetHappiness ()

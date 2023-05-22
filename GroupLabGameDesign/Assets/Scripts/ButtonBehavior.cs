@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class ButtonBehavior : MonoBehaviour
 {
+    private static PersistentData data;
+
     void Start ()
     {
-        
+        data = GameObject.FindWithTag("PD").GetComponent<PersistentData>();
     }
 
     public void loadMenu()
@@ -40,5 +42,15 @@ public class ButtonBehavior : MonoBehaviour
     public void LoadNewsScene (int scene)
     {
         SceneManager.LoadScene(scene);
+    }
+
+    public void AlterHappiness (int amount)
+    {
+        data.AlterHappiness(amount);
+    }
+
+    public void AlterStress (int amount)
+    {
+        data.AlterStress(amount);
     }
 }

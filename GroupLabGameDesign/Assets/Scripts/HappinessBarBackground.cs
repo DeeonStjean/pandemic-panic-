@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class HappinessBarBackground : MonoBehaviour
 {
     private static PersistentData data;
-    [SerializeField] int type = 0;
 
     [SerializeField] GameObject red;
     [SerializeField] GameObject yel;
