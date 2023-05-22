@@ -53,15 +53,4 @@ public class ButtonBehavior : MonoBehaviour
         SceneManager.LoadScene("m3week1des1");
     }
 
-    // Decision reporting
-    public void report()
-    {
-        if (instance != null)
-            instance.report();
-    }
-
-    public void addDecision (int id)
-    {
-        instance.addDecision(id);
-    }
 }
