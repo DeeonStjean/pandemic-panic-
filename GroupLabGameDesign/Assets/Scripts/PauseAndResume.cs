@@ -14,8 +14,8 @@ public class PauseAndResume : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        pauseMode = GameObject.FindGameObjectsWithTag("ShowInPauseMode");
-        resumeMode = GameObject.FindGameObjectsWithTag("ShowInResumeMode");
+        pauseMode = GameObject.FindGameObjectsWithTag("ShowOnPause");
+        resumeMode = GameObject.FindGameObjectsWithTag("ShowOnResume");
 
         //buttons that should only be showed in pause mode should start off as inactive
         foreach (GameObject g in pauseMode)

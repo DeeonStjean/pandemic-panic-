@@ -8,6 +8,8 @@ TagManager:
   - Reporter
   - Decisionkeeper
   - PD
+  - ShowOnPause
+  - ShowOnResume
   layers:
   - Default
   - TransparentFX
