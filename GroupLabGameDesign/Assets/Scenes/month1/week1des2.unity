@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 6339324}
   m_Layer: 5
   m_Name: Decision 3
-  m_TagString: Untagged
+  m_TagString: Decision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -737,7 +737,7 @@ GameObject:
   - component: {fileID: 266343391}
   m_Layer: 5
   m_Name: Decision 2
-  m_TagString: Untagged
+  m_TagString: Decision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1244,7 +1244,7 @@ GameObject:
   - component: {fileID: 901738331}
   m_Layer: 5
   m_Name: Decision 1
-  m_TagString: Untagged
+  m_TagString: Decision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
