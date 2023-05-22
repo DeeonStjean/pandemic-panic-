@@ -18,21 +18,23 @@ public class HappinessBarBackground : MonoBehaviour
     }
     void Update()
     {
-        if (data.happiness <= 29)
+        int happiness = data.GetHappiness();
+
+        if (happiness <= 29)
             red.SetActive(true);
         else
             red.SetActive(false);
 
-        if (data.happiness > 29 && data.happiness <= 70)
+        if (happiness > 29 && happiness <= 70)
             yel.SetActive(true);
         else
             yel.SetActive(false);
 
-        if (data.happiness >= 71)
+        if (happiness >= 71)
             gre.SetActive(true);
         else
             gre.SetActive(false);
 
-        gameObject.GetComponent<Slider>().value = data.happiness;
+        gameObject.GetComponent<Slider>().value = happiness;
     }
 }

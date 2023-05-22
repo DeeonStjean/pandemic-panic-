@@ -5,16 +5,18 @@ using UnityEngine.UI;
 
 public class StressBar : MonoBehaviour
 {
+    public static PersistentData data;
 
-    public Slider slider;
-
-    public void SetMaxStress(int health)
+    void Start ()
     {
-        slider.maxValue = health;        
+        data = GameObject.FindWithTag("PD").GetComponent<PersistentData>();
     }
-
-    public void SetStress(int health)
+    
+    void Update ()
     {
-        slider.value = health;
+        Transform tf = gameObject.GetComponent<Transform>();
+
+        float xVal = -3.5f + ((float)data.GetStress() * 0.035f);
+        tf.localPosition = new Vector2(xVal, tf.localPosition.y);
     }
 }

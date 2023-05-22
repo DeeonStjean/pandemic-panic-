@@ -10,10 +10,10 @@ public class PersistentData : MonoBehaviour
 
     // Stress and the tolerance the player has.
     // If stress grows more than tolerance, game over.
-    [SerializeField] int stress = 0;
+    [SerializeField] private int stress = 0;
 
     // Happiness of the citizens.
-    [SerializeField] public int happiness = 50;
+    [SerializeField] private int happiness = 50;
 
     // Cases and the rate they progress.
     [SerializeField] int cases = 0;
@@ -40,22 +40,6 @@ public class PersistentData : MonoBehaviour
             Destroy(gameObject);
     }
 
-    void Start()
-    {
-    }
-
-    public void SStress(int stress)
-    {
-        stressBar.SetStress(stress);
-    }
-
-    void Update () {}
-
-    public int GetStress()
-    {
-        return stress;
-    }
-
     public void alterHappiness (int happiness)
     {
         this.happiness += happiness;
@@ -63,11 +47,21 @@ public class PersistentData : MonoBehaviour
 
     public void verifyContinue ()
     {
-        if (happiness < 10)
+        if (happiness <= 10)
             //Riot
             SceneManager.LoadScene("GameOverScene2");
         else if (stress >= 100)
             //Too Stressed
             SceneManager.LoadScene("GameOverScene1");
+    }
+
+    public int GetStress ()
+    {
+        return stress;
+    }
+
+    public int GetHappiness ()
+    {
+        return happiness;
     }
 }
