@@ -177,10 +177,10 @@ MonoBehaviour:
   textComponent: {fileID: 102792547}
   lines:
   - 
-  - ph
-  - ph
-  - ph
-  - ph
+  - We are finally ready to kick start our recovery.
+  - No more will we live in hear over the virus. Relief is coming.
+  - We need to keep our health officials at least not stressed.
+  - We might burn out our health officials, which can be risky.
   textSpeed: 0.04
   textSound: {fileID: 583742003}
 --- !u!114 &2341341

@@ -177,10 +177,10 @@ MonoBehaviour:
   textComponent: {fileID: 102792547}
   lines:
   - 
-  - ph
-  - ph
-  - ph
-  - ph
+  - It is time to get things back to normal.
+  - No more will our students be restricted to Zoom meetings.
+  - We must understand the danger has not gone away just yet.
+  - My fellow Americans, as much as we want things back to normal, it is risky.
   textSpeed: 0.04
   textSound: {fileID: 583742003}
 --- !u!114 &2341341
