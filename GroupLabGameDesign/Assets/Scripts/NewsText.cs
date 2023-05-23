@@ -1,20 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class NewsText : MonoBehaviour
 {
     [SerializeField] public string[] lines;
-    private int index = 0;
+    [SerializeField] public TextMeshProUGUI textComponent;
+    [SerializeField] public int nextScene;
 
-    void Start()
+    [SerializeField] float textSpeed = 0.04f;
+
+    private int index = -1;
+
+
+    public void updateText()
     {
+        index++;
+
+        textComponent.text = "";
+
+        if (index == lines.Length)
+            SceneManager.LoadScene(nextScene);
+
+        StartCoroutine(UpdateText());
+
         
     }
 
-    // on button update:
-    //     index++;
-    //     textcomponent.text = lines[index];
-
-    //     do animation character by character
+    IEnumerator UpdateText ()
+    {
+        foreach (char c in lines[index].ToCharArray())
+        {
+            textComponent.text += c;
+            yield return new WaitForSeconds(textSpeed);
+        }
+    }
 }
