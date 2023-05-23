@@ -951,7 +951,7 @@ MonoBehaviour:
   - The surge in cases has strained local healthcare systems and raised concerns
     about the capacity to handle the increasing number of hospitalizations.
   textComponent: {fileID: 1250962376}
-  nextScene: 20
+  nextScene: 21
   textSpeed: 0.04
 --- !u!1 &908728219
 GameObject:

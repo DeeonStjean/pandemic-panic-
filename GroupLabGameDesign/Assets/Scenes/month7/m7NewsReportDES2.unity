@@ -1492,7 +1492,7 @@ MonoBehaviour:
   - The combination of these measures forms a comprehensive strategy to combat the
     virus effectively.
   textComponent: {fileID: 1250962376}
-  nextScene: 23
+  nextScene: 24
   textSpeed: 0.04
 --- !u!1 &948714249
 GameObject:
