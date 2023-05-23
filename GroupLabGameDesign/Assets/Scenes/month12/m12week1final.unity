@@ -1403,7 +1403,7 @@ MonoBehaviour:
     have shown high efficacy rates in preventing COVID-19 infection during clinical
     trials, offering a glimmer of light at the end of a long and challenging tunnel.
   textComponent: {fileID: 1250962376}
-  nextScene: 0
+  nextScene: 1
   textSpeed: 0.04
 --- !u!1 &888064868
 GameObject:

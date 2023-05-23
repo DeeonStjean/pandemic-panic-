@@ -1431,7 +1431,7 @@ MonoBehaviour:
   - The response has been marked by a sense of unity and a reaffirmation of trust
     in the government's ability to handle the crisis effectively.
   textComponent: {fileID: 1250962376}
-  nextScene: 29
+  nextScene: 30
   textSpeed: 0.04
 --- !u!1 &964790745
 GameObject:

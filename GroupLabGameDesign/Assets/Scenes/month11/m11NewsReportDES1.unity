@@ -1219,7 +1219,7 @@ MonoBehaviour:
   - He urged citizens to have faith in the scientific process and to trust the expertise
     of healthcare professionals.
   textComponent: {fileID: 1250962376}
-  nextScene: 35
+  nextScene: 36
   textSpeed: 0.04
 --- !u!1 &869382021
 GameObject:

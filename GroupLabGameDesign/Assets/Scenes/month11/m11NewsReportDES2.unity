@@ -1164,7 +1164,7 @@ MonoBehaviour:
   - While this decision may have been intended to maintain confidence and avoid speculation,
     it has left some citizens feeling unsettled.
   textComponent: {fileID: 1250962376}
-  nextScene: 35
+  nextScene: 36
   textSpeed: 0.04
 --- !u!1 &916902924
 GameObject:

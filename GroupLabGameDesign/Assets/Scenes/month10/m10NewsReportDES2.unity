@@ -1348,7 +1348,7 @@ MonoBehaviour:
   - This statement has resulted in disapproval by many Americans since many wish
     to go back to how live was before the pandemic.
   textComponent: {fileID: 1250962376}
-  nextScene: 32
+  nextScene: 33
   textSpeed: 0.04
 --- !u!1 &964790745
 GameObject:

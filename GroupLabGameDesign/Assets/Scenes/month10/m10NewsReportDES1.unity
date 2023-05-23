@@ -951,7 +951,7 @@ MonoBehaviour:
     covid cases have spiked out of control, now forcing the schools to close down
     again by next month.
   textComponent: {fileID: 1250962376}
-  nextScene: 32
+  nextScene: 33
   textSpeed: 0.04
 --- !u!1 &887738576
 GameObject:

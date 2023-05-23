@@ -1081,7 +1081,7 @@ MonoBehaviour:
     concerns about the potential consequences of such deception during a public health
     crisis.
   textComponent: {fileID: 1250962376}
-  nextScene: 29
+  nextScene: 30
   textSpeed: 0.04
 --- !u!1 &964790745
 GameObject:
