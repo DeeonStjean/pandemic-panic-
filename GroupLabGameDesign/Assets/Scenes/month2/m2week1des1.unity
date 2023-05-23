@@ -179,7 +179,7 @@ MonoBehaviour:
   - Chinese state media reported the first known death from an illness caused by
     the virus, which had infected dozens of people... Should you bring attention
     to the issue?
-  - As much as this hurts all of this, this will be for the greater good.
+  - As much as this hurts all of us, this will be for the greater good.
   - We must start preparing for the worst, this can be a crisis.
   - Completely barring travel must be the best option.
   - We must completely ban travel, as this will be the best option.
@@ -701,7 +701,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'The Department of Homeland Security suggests all passengers who have traveled
-    to China within the last 14 days must be rerouted and screened possible quarantine.
+    to China within the last 14 days must be rerouted and screened for possible quarantine.
 
 
     Allow?'

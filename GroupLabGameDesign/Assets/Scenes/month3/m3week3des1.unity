@@ -177,10 +177,10 @@ MonoBehaviour:
   textComponent: {fileID: 102792547}
   lines:
   - null?!
-  - placeholder
-  - placeholder
-  - placeholder
-  - placeholder
+  - We need to make sure that the economy can bounce back strong.
+  - We need more drastic measures in order to stimulate capitalism.
+  - No need for such waste of money.
+  - 'I am certain there is no need for a relief. '
   textSpeed: 0.04
   textSound: {fileID: 583742003}
 --- !u!114 &2341341
