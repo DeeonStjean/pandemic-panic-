@@ -43,13 +43,15 @@ public class PauseAndResume : MonoBehaviour
     public void Resume()
     {
         Time.timeScale = 1.0f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        
 
-        //buttons that should only be showed in pause mode should start off as inactive
-        foreach (GameObject g in pauseMode)
-            g.SetActive(false);
+        // buttons that should only be showed in pause mode should start off as inactive
+        // foreach (GameObject g in pauseMode)
+        //     g.SetActive(false);
 
-        foreach (GameObject g in resumeMode)
-            g.SetActive(true);
+        // foreach (GameObject g in resumeMode)
+        //     g.SetActive(true);
 
     }
 
