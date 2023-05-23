@@ -177,10 +177,10 @@ MonoBehaviour:
   textComponent: {fileID: 102792547}
   lines:
   - 
-  - ph
-  - ph
-  - ph
-  - ph
+  - These deaths are extremely unfortunate. We can prevent even more.
+  - This is such an upsetting time for us. But, we can still prevent more.
+  - This hurts all of us. However, this is an inevitable part of life.
+  - Understand that this is only nature taking its course.
   textSpeed: 0.04
   textSound: {fileID: 583742003}
 --- !u!114 &2341341

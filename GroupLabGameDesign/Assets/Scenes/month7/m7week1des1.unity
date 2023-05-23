@@ -177,10 +177,10 @@ MonoBehaviour:
   textComponent: {fileID: 102792547}
   lines:
   - 
-  - ph
-  - ph
-  - ph
-  - ph
+  - Masks are the best way to prevent the spread. Please use them and social distancing.
+  - Masks have been shown to help. That, and social distancing.
+  - This is a free country, I will allow the citizens to choose.
+  - I will not force the citizens to wear masks.
   textSpeed: 0.04
   textSound: {fileID: 583742003}
 --- !u!114 &2341341

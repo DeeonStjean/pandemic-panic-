@@ -177,10 +177,10 @@ MonoBehaviour:
   textComponent: {fileID: 102792547}
   lines:
   - 
-  - ph
-  - ph
-  - ph
-  - ph
+  - The citizens were happy to have an honest president.
+  - As stressful as this can be, it felt like a weight taken off your chest.
+  - The public was left skeptical, and some worried about their president.
+  - No need for the public to know. Top secret business.
   textSpeed: 0.04
   textSound: {fileID: 583742003}
 --- !u!114 &2341341

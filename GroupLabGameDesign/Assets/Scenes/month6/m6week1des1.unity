@@ -177,10 +177,10 @@ MonoBehaviour:
   textComponent: {fileID: 102792547}
   lines:
   - 
-  - ph
-  - ph
-  - ph
-  - ph
+  - I am part of a bigger union here. If we work together, we can tackle this.
+  - Let's come together and decide the best course.
+  - We don't need to keep focusing on this. It'll cause more stress.
+  - I've done as much as I could. Up to the citizens, and for freedom.
   textSpeed: 0.04
   textSound: {fileID: 583742003}
 --- !u!114 &2341341
@@ -417,7 +417,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The Southern in the US have experienced a rise in covid cases
+  m_text: 'The Southern in the US have experienced a rise in covid cases!
 
 
     What
@@ -1421,7 +1421,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: dont bring attention to the issue
+  m_text: don't bring attention to the issue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80bacbb2c4cdd4f56a7e130ca4acb597, type: 2}
   m_sharedMaterial: {fileID: 7485035357008968249, guid: 80bacbb2c4cdd4f56a7e130ca4acb597, type: 2}
@@ -1836,7 +1836,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: talk to the states representatives
+  m_text: talk to the state representatives
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80bacbb2c4cdd4f56a7e130ca4acb597, type: 2}
   m_sharedMaterial: {fileID: 7485035357008968249, guid: 80bacbb2c4cdd4f56a7e130ca4acb597, type: 2}
