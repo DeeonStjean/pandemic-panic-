@@ -181,7 +181,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ...
+  m_text: Earlier this month, China recorded its first death from an illness caused
+    by the new virus.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80bacbb2c4cdd4f56a7e130ca4acb597, type: 2}
   m_sharedMaterial: {fileID: 7485035357008968249, guid: 80bacbb2c4cdd4f56a7e130ca4acb597, type: 2}
@@ -619,6 +620,7 @@ GameObject:
   - component: {fileID: 914969315}
   - component: {fileID: 914969314}
   - component: {fileID: 914969316}
+  - component: {fileID: 914969317}
   m_Layer: 5
   m_Name: TextBoxPanel
   m_TagString: Untagged
@@ -699,8 +701,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - Earlier this month, China recorded its first death from an illness caused by
-    the new virus.
   - The CDC has also reported its first official case of the virus.
   - In light of these events, The President has decided to start arranging plans
     to restrict travel and develop an action plan in case of the spread becomes faster
@@ -708,6 +708,24 @@ MonoBehaviour:
   textComponent: {fileID: 32556178}
   nextScene: 6
   textSpeed: 0.04
+--- !u!114 &914969317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914969312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 957e69e12792b4b499d1a875eebca14a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textComponent: {fileID: 32556178}
+  lines:
+  - Earlier this month, China recorded its first death from an illness caused by
+    the new virus.
+  textSpeed: 0.04
+  textSound: {fileID: 2058877799}
 --- !u!1 &964790745
 GameObject:
   m_ObjectHideFlags: 0

@@ -22,7 +22,10 @@ public class NewsText : MonoBehaviour
         textComponent.text = "";
 
         if (index == lines.Length)
+        {
             SceneManager.LoadScene(nextScene);
+            return;
+        }
 
         StartCoroutine(UpdateText());
 
