@@ -181,12 +181,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Earlier this month, a Chinese doctor Dr. Li Wenliang has died after contracting
-    the coronavirus... He has been trying to ring early alarms that infections could
-    spin out of control... And here in the US, the president has decided it would
-    be best to wait until more reported deaths are declared\u2026 This decision seems
-    to have altered the masses as some individuals fear that they report that they
-    feel \u201Clow confidence\u201D in the government\u2019s advice."
+  m_text: Earlier this month, a Chinese doctor Dr. Li Wenliang has died after contracting
+    the coronavirus.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80bacbb2c4cdd4f56a7e130ca4acb597, type: 2}
   m_sharedMaterial: {fileID: 7485035357008968249, guid: 80bacbb2c4cdd4f56a7e130ca4acb597, type: 2}
@@ -213,15 +209,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -434,7 +430,8 @@ GameObject:
   - component: {fileID: 357265826}
   - component: {fileID: 357265829}
   - component: {fileID: 357265828}
-  - component: {fileID: 357265827}
+  - component: {fileID: 357265831}
+  - component: {fileID: 357265830}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -462,26 +459,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &357265827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 357265825}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 957e69e12792b4b499d1a875eebca14a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textComponent: {fileID: 138397869}
-  lines:
-  - 
-  - 
-  - 
-  - 
-  textSpeed: 0.012
-  textSound: {fileID: 1120969163}
 --- !u!114 &357265828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -520,6 +497,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 357265825}
   m_CullTransparentMesh: 1
+--- !u!114 &357265830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357265825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40e45a49adba1fe4f86b9ebeb86abfbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines: []
+  textComponent: {fileID: 0}
+  nextScene: 0
+  textSpeed: 0.04
+--- !u!114 &357265831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357265825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 957e69e12792b4b499d1a875eebca14a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textComponent: {fileID: 0}
+  lines: []
+  textSpeed: 0
+  textSound: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,6 +729,8 @@ GameObject:
   - component: {fileID: 692463886}
   - component: {fileID: 692463888}
   - component: {fileID: 692463887}
+  - component: {fileID: 692463890}
+  - component: {fileID: 692463889}
   m_Layer: 5
   m_Name: TextBox
   m_TagString: Untagged
@@ -787,6 +798,45 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 692463885}
   m_CullTransparentMesh: 1
+--- !u!114 &692463889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692463885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40e45a49adba1fe4f86b9ebeb86abfbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - He has been trying to ring early alarms that infections could spin out of control.
+  - And here in the US, the president has decided it would be best to wait until
+    more reported deaths are declared.
+  - "This decision seems to have altered the masses as some individuals fear that
+    they report that they feel \u201Clow confidence\u201D in the government\u2019s
+    advice."
+  textComponent: {fileID: 138397869}
+  nextScene: 10
+  textSpeed: 0.04
+--- !u!114 &692463890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692463885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 957e69e12792b4b499d1a875eebca14a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textComponent: {fileID: 138397869}
+  lines:
+  - 
+  textSpeed: 0.04
+  textSound: {fileID: 1120969163}
 --- !u!1 &964790745
 GameObject:
   m_ObjectHideFlags: 0
@@ -1167,6 +1217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 194666f0c32544125a4d6469e42fbbd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTime: 4
 --- !u!1 &1587615135
 GameObject:
   m_ObjectHideFlags: 0
@@ -1329,9 +1380,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1303471048}
-        m_TargetAssemblyTypeName: ButtonBehavior, Assembly-CSharp
-        m_MethodName: nextScene
+      - m_Target: {fileID: 692463889}
+        m_TargetAssemblyTypeName: NewsText, Assembly-CSharp
+        m_MethodName: updateText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
