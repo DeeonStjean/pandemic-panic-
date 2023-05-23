@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PersistentData : MonoBehaviour
 {
+    public bool decided = false;
     // Scoring
     [SerializeField] int score = 0;
 
@@ -26,7 +27,6 @@ public class PersistentData : MonoBehaviour
 
     // PersistentData.
     public static PersistentData Instance;
-
     public void Awake()
     {
         if (Instance == null)

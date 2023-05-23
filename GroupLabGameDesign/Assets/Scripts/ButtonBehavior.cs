@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ButtonBehavior : MonoBehaviour
 {
     private static PersistentData data;
+
     private int index = 0;
 
     [SerializeField] float waitTime = 4.0f;
@@ -13,6 +14,7 @@ public class ButtonBehavior : MonoBehaviour
     void Start ()
     {
         data = GameObject.FindWithTag("PD").GetComponent<PersistentData>();
+        data.decided = false;
     }
 
     public void loadMenu()
@@ -70,11 +72,13 @@ public class ButtonBehavior : MonoBehaviour
     public void AlterHappiness (int amount)
     {
         data.AlterHappiness(amount);
+        data.decided = true;
     }
 
     public void AlterStress (int amount)
     {
         data.AlterStress(amount);
+        data.decided = true;
     }
 
     public void Reset ()

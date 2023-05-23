@@ -9,13 +9,15 @@ public class PauseAndResume : MonoBehaviour
     GameObject[] pauseMode;
     GameObject[] resumeMode;
     
-
+    private static PersistentData data;
 
     // Start is called before the first frame update
     void Start()
     {
         pauseMode = GameObject.FindGameObjectsWithTag("ShowOnPause");
         resumeMode = GameObject.FindGameObjectsWithTag("ShowOnResume");
+
+        data = GameObject.FindWithTag("PD").GetComponent<PersistentData>();
 
         //buttons that should only be showed in pause mode should start off as inactive
         foreach (GameObject g in pauseMode)
@@ -31,6 +33,9 @@ public class PauseAndResume : MonoBehaviour
 
     public void Pause()
     {
+        if (data.decided)
+            return;
+            
         Time.timeScale = 0.0f;
 
         foreach (GameObject g in resumeMode)
@@ -42,9 +47,9 @@ public class PauseAndResume : MonoBehaviour
 
     public void Resume()
     {
+
         Time.timeScale = 1.0f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        
 
         // buttons that should only be showed in pause mode should start off as inactive
         // foreach (GameObject g in pauseMode)
