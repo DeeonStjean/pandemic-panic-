@@ -562,6 +562,7 @@ GameObject:
   - component: {fileID: 859830716}
   - component: {fileID: 859830715}
   - component: {fileID: 859830714}
+  - component: {fileID: 859830717}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -617,7 +618,7 @@ MonoBehaviour:
     and recreational facilities. The surge in cases has strained local healthcare
     systems and raised concerns about the capacity to handle the increasing number
     of hospitalizations\u2026"
-  textSpeed: 0.1
+  textSpeed: 0.04
   textSound: {fileID: 1502221896}
 --- !u!114 &859830715
 MonoBehaviour:
@@ -657,6 +658,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 859830712}
   m_CullTransparentMesh: 1
+--- !u!114 &859830717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859830712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40e45a49adba1fe4f86b9ebeb86abfbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - He called on Americans to exercise patience and to continue following the guidance
+    provided by health officials, including wearing masks, practicing social distancing,
+    and practicing good hygiene.
+  - Highlighting the progress being made in vaccine development, the President reassured
+    the public that rigorous testing and safety protocols are being followed to ensure
+    the effectiveness and reliability of any approved vaccines.
+  - He urged citizens to have faith in the scientific process and to trust the expertise
+    of healthcare professionals.
+  textComponent: {fileID: 1250962376}
+  nextScene: 35
+  textSpeed: 0.04
 --- !u!1 &964790745
 GameObject:
   m_ObjectHideFlags: 0
@@ -852,14 +877,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: In light of reaching ten million coronavirus cases this month, the President
     emphasized the importance of remaining vigilant and united as the nation waits
-    for the promising advancements in vaccine development and distribution. He called
-    on Americans to exercise patience and to continue following the guidance provided
-    by health officials, including wearing masks, practicing social distancing, and
-    practicing good hygiene. Highlighting the progress being made in vaccine development,
-    the President reassured the public that rigorous testing and safety protocols
-    are being followed to ensure the effectiveness and reliability of any approved
-    vaccines. He urged citizens to have faith in the scientific process and to trust
-    the expertise of healthcare professionals.
+    for the promising advancements in vaccine development and distribution.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80bacbb2c4cdd4f56a7e130ca4acb597, type: 2}
   m_sharedMaterial: {fileID: 7485035357008968249, guid: 80bacbb2c4cdd4f56a7e130ca4acb597, type: 2}
@@ -886,15 +904,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 17
-  m_fontSizeBase: 17
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1344,10 +1362,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1303471048}
-        m_TargetAssemblyTypeName: ButtonBehavior, Assembly-CSharp
-        m_MethodName: LoadNewsScene
-        m_Mode: 3
+      - m_Target: {fileID: 859830717}
+        m_TargetAssemblyTypeName: NewsText, Assembly-CSharp
+        m_MethodName: updateText
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

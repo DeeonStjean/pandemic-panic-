@@ -389,6 +389,7 @@ GameObject:
   - component: {fileID: 859830716}
   - component: {fileID: 859830715}
   - component: {fileID: 859830714}
+  - component: {fileID: 859830717}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -444,7 +445,7 @@ MonoBehaviour:
     and recreational facilities. The surge in cases has strained local healthcare
     systems and raised concerns about the capacity to handle the increasing number
     of hospitalizations\u2026"
-  textSpeed: 0.1
+  textSpeed: 0.04
   textSound: {fileID: 1502221896}
 --- !u!114 &859830715
 MonoBehaviour:
@@ -484,6 +485,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 859830712}
   m_CullTransparentMesh: 1
+--- !u!114 &859830717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859830712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40e45a49adba1fe4f86b9ebeb86abfbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - Additionally, the nation mourns as the death toll surpasses a tragic milestone
+    of 300,000.
+  - However, amidst this somber news, a glimmer of hope emerges with the introduction
+    of the vaccine.
+  - 'Let''s delve into the details:  In a momentous development, the U.S. Food and
+    Drug Administration (FDA) has granted emergency use authorization for the Moderna
+    and Pfizer-BioNTech vaccines, marking a significant milestone in the fight against
+    the COVID-19 pandemic.'
+  - This decision comes after rigorous scientific evaluation, thorough clinical trials,
+    and extensive safety assessments.
+  - The approval of these vaccines brings a sense of hope to a nation grappling with
+    the devastating impact of the virus. Both the Moderna and Pfizer-BioNTech vaccines
+    have shown high efficacy rates in preventing COVID-19 infection during clinical
+    trials, offering a glimmer of light at the end of a long and challenging tunnel.
+  textComponent: {fileID: 1250962376}
+  nextScene: 0
+  textSpeed: 0.04
 --- !u!1 &964790745
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,8 +685,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.9, y: 21.5}
-  m_SizeDelta: {x: 457.98, y: 48.91}
+  m_AnchoredPosition: {x: -0.9, y: -1.28}
+  m_SizeDelta: {x: 457.98, y: 168.78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1250962376
 MonoBehaviour:
@@ -677,19 +708,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'This month, the FDA officially granted emergency use authorization for
-    the Moderna and Pfizer-BioNTech vaccines. Additionally, the nation mourns as
-    the death toll surpasses a tragic milestone of 300,000. However, amidst this
-    somber news, a glimmer of hope emerges with the introduction of the vaccine.
-    Let''s delve into the details:  In a momentous development, the U.S. Food and
-    Drug Administration (FDA) has granted emergency use authorization for the Moderna
-    and Pfizer-BioNTech vaccines, marking a significant milestone in the fight against
-    the COVID-19 pandemic. This decision comes after rigorous scientific evaluation,
-    thorough clinical trials, and extensive safety assessments.  The approval of
-    these vaccines brings a sense of hope to a nation grappling with the devastating
-    impact of the virus. Both the Moderna and Pfizer-BioNTech vaccines have shown
-    high efficacy rates in preventing COVID-19 infection during clinical trials,
-    offering a glimmer of light at the end of a long and challenging tunnel'
+  m_text: This month, the FDA officially granted emergency use authorization for
+    the Moderna and Pfizer-BioNTech vaccines.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80bacbb2c4cdd4f56a7e130ca4acb597, type: 2}
   m_sharedMaterial: {fileID: 7485035357008968249, guid: 80bacbb2c4cdd4f56a7e130ca4acb597, type: 2}
@@ -716,15 +736,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29
-  m_fontSizeBase: 29
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1173,9 +1193,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1303471048}
-        m_TargetAssemblyTypeName: ButtonBehavior, Assembly-CSharp
-        m_MethodName: nextScene
+      - m_Target: {fileID: 859830717}
+        m_TargetAssemblyTypeName: NewsText, Assembly-CSharp
+        m_MethodName: updateText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
