@@ -1873,7 +1873,7 @@ MonoBehaviour:
   - By the end of this month, there have been one hundred thousand covid related
     deaths in the country.
   textComponent: {fileID: 897677603}
-  nextScene: 18
+  nextScene: 19
   textSpeed: 0.04
 --- !u!1 &897677601
 GameObject:

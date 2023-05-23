@@ -177,10 +177,10 @@ MonoBehaviour:
   textComponent: {fileID: 102792547}
   lines:
   - 
-  - ph
-  - ph
-  - ph
-  - ph
+  - We must stimulate the economy as best as we can.
+  - Even if it means we must open the country, we need a good economy.
+  - As much as the economy is broken, we must awknowledge the virus is still around.
+  - I promise to the American citizens no opening.
   textSpeed: 0.04
   textSound: {fileID: 583742003}
 --- !u!114 &2341341

@@ -404,7 +404,7 @@ MonoBehaviour:
   - The perception that these travel bans singled out Asian communities has fueled
     prejudice and discrimination.
   textComponent: {fileID: 1824624243}
-  nextScene: 14
+  nextScene: 15
   textSpeed: 0.04
 --- !u!1 &519420028
 GameObject:
