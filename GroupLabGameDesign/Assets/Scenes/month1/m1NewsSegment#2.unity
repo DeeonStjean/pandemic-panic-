@@ -1398,7 +1398,7 @@ MonoBehaviour:
     virus, which in the long run, can result in greater global chaos as it would
     be harder to dampen the spread of the virus.
   textComponent: {fileID: 32556178}
-  nextScene: 6
+  nextScene: 7
   textSpeed: 0.04
 --- !u!1 &964790745
 GameObject:

@@ -1492,7 +1492,7 @@ MonoBehaviour:
     they report that they feel \u201Clow confidence\u201D in the government\u2019s
     advice."
   textComponent: {fileID: 138397869}
-  nextScene: 10
+  nextScene: 11
   textSpeed: 0.04
 --- !u!114 &692463890
 MonoBehaviour:

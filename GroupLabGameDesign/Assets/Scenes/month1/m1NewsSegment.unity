@@ -1514,7 +1514,7 @@ MonoBehaviour:
     to restrict travel and develop an action plan in case of the spread becomes faster
     than expected.
   textComponent: {fileID: 32556178}
-  nextScene: 6
+  nextScene: 7
   textSpeed: 0.04
 --- !u!114 &914969317
 MonoBehaviour:
