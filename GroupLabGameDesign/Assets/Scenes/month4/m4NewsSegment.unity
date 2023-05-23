@@ -484,6 +484,7 @@ GameObject:
   - component: {fileID: 739835545}
   - component: {fileID: 739835544}
   - component: {fileID: 739835543}
+  - component: {fileID: 739835546}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -531,37 +532,7 @@ MonoBehaviour:
     crisis we are facing on a global scale\u2026 The repercussions of this economic
     downturn are expected to be far-reaching, affecting individuals, businesses,
     and governments alike."
-  - "Earlier this month, the World Bank made a stark announcement, stating that the
-    ongoing COVID-19 pandemic is expected to plunge the global economy into the worst
-    recession since World War II. This forecast underscores the magnitude of the
-    crisis we are facing on a global scale\u2026 The repercussions of this economic
-    downturn are expected to be far-reaching, affecting individuals, businesses,
-    and governments alike."
-  - "Earlier this month, the World Bank made a stark announcement, stating that the
-    ongoing COVID-19 pandemic is expected to plunge the global economy into the worst
-    recession since World War II. This forecast underscores the magnitude of the
-    crisis we are facing on a global scale\u2026 The repercussions of this economic
-    downturn are expected to be far-reaching, affecting individuals, businesses,
-    and governments alike."
-  - "Earlier this month, the World Bank made a stark announcement, stating that the
-    ongoing COVID-19 pandemic is expected to plunge the global economy into the worst
-    recession since World War II. This forecast underscores the magnitude of the
-    crisis we are facing on a global scale\u2026 The repercussions of this economic
-    downturn are expected to be far-reaching, affecting individuals, businesses,
-    and governments alike."
-  - "Earlier this month, the World Bank made a stark announcement, stating that the
-    ongoing COVID-19 pandemic is expected to plunge the global economy into the worst
-    recession since World War II. This forecast underscores the magnitude of the
-    crisis we are facing on a global scale\u2026 The repercussions of this economic
-    downturn are expected to be far-reaching, affecting individuals, businesses,
-    and governments alike."
-  - "Earlier this month, the World Bank made a stark announcement, stating that the
-    ongoing COVID-19 pandemic is expected to plunge the global economy into the worst
-    recession since World War II. This forecast underscores the magnitude of the
-    crisis we are facing on a global scale\u2026 The repercussions of this economic
-    downturn are expected to be far-reaching, affecting individuals, businesses,
-    and governments alike."
-  textSpeed: 0.006
+  textSpeed: 0.04
   textSound: {fileID: 774400804}
 --- !u!114 &739835544
 MonoBehaviour:
@@ -601,6 +572,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 739835541}
   m_CullTransparentMesh: 1
+--- !u!114 &739835546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739835541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40e45a49adba1fe4f86b9ebeb86abfbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - hese measures mandated the closure of non-essential businesses, limited public
+    gatherings, and enforced guidelines to maintain a safe physical distance of at
+    least six feet between individuals.
+  - Many citizens have found it hard to adapt to the new measures, especially essential
+    workers as they still run the risk of contracting the virus.
+  - To help alleviate these concerns, the President has decided to pass the Relief
+    Act, a comprehensive legislation package designed to provide economic support
+    to individuals, families, and businesses impacted by the pandemic.
+  - The act includes provisions such as direct stimulus payments to eligible individuals,
+    expanded unemployment benefits, small business loans, and financial aid to healthcare
+    systems.
+  textComponent: {fileID: 1389506608}
+  nextScene: 15
+  textSpeed: 0.04
 --- !u!1 &774400803
 GameObject:
   m_ObjectHideFlags: 0
@@ -1059,6 +1057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 194666f0c32544125a4d6469e42fbbd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTime: 4
 --- !u!1 &1389506606
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,18 +1116,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "As the virus continued to spread rapidly across the country, federal,
-    state, and local authorities introduced stringent social distancing laws. These
-    measures mandated the closure of non-essential businesses, limited public gatherings,
-    and enforced guidelines to maintain a safe physical distance of at least six
-    feet between individuals\u2026 Many citizens have found it hard to adapt to the
-    new measures, especially essential workers as they still run the risk of contracting
-    the virus\u2026 To help alleviate these concerns, the President has decided to
-    pass the Relief Act, a comprehensive legislation package designed to provide
-    economic support to individuals, families, and businesses impacted by the pandemic.
-    The act includes provisions such as direct stimulus payments to eligible individuals,
-    expanded unemployment benefits, small business loans, and financial aid to healthcare
-    systems."
+  m_text: As the virus continued to spread rapidly across the country, federal, state,
+    and local authorities introduced stringent social distancing laws.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80bacbb2c4cdd4f56a7e130ca4acb597, type: 2}
   m_sharedMaterial: {fileID: 7485035357008968249, guid: 80bacbb2c4cdd4f56a7e130ca4acb597, type: 2}
@@ -1155,15 +1144,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1367,9 +1356,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1303471048}
-        m_TargetAssemblyTypeName: ButtonBehavior, Assembly-CSharp
-        m_MethodName: nextScene
+      - m_Target: {fileID: 739835546}
+        m_TargetAssemblyTypeName: NewsText, Assembly-CSharp
+        m_MethodName: updateText
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
