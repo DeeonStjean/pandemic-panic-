@@ -1217,7 +1217,7 @@ MonoBehaviour:
     expanded unemployment benefits, small business loans, and financial aid to healthcare
     systems.
   textComponent: {fileID: 1389506608}
-  nextScene: 15
+  nextScene: 16
   textSpeed: 0.04
 --- !u!1 &754545920
 GameObject:

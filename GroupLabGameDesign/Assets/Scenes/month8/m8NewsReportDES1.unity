@@ -1296,7 +1296,7 @@ MonoBehaviour:
   - On another positive note, the CDC has declared that they are beginning to develop
     a plan to distribute a coronavirus vaccine.
   textComponent: {fileID: 1250962376}
-  nextScene: 26
+  nextScene: 27
   textSpeed: 0.04
 --- !u!1 &863175295
 GameObject:
